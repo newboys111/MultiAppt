@@ -12,8 +12,8 @@
 	<view class="article-box">
 		<!-- article content begin -->
 		<view class="article">
-			<view wx:if="{{meet.isOver}}" class="corner-right-top bg-grey text-white">已结束</view>
-			<view wx:if="{{!meet.isOver}}" class="corner-right-top bg-skin1 text-white">进行中</view>
+			<view wx:if="{{meet.isOver}}" class="corner-right-top bg-gray text-black">已结束</view>
+			<view wx:if="{{!meet.isOver}}" class="corner-right-top border-skin1 text-red" style="border:1rpx solid #b24444">进行中</view>
 
 			<view class="title"><text selectable="true">{{meet.MEET_TITLE}}</text></view>
 			<view class="time">{{meet.MEET_TYPE}}</view>

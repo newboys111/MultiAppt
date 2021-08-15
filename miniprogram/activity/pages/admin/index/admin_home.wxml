@@ -32,6 +32,9 @@
 		<view class="item" bindtap="url" data-url="../user/admin_user_list"> <text
 				class="icon-peoplefill text-purple"></text> <text class="text-black">用户管理</text>
 		</view>
+		<view class="item" bindtap="url" data-url="../meet/admin_meet_list"> <text
+				class="icon-group text-olive"></text> <text class="text-black">活动管理</text>
+		</view>
 		<view class="item" bindtap="url" data-url="../news/admin_news_list"> <text
 				class="icon-newsfill text-pink"></text> <text class="text-black">资讯管理</text>
 		</view>

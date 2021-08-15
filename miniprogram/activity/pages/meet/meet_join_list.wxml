@@ -9,13 +9,13 @@
 			<view class="item"  wx:for="{{dataList.list}}"
 				wx:key="key">
 				<view class="pic">
-					<image class="avatar round large" src="{{item.USER_DETAIL.USER_PIC}}">
+					<image mode="aspectFill" class="avatar round large" src="{{item.USER_DETAIL.USER_PIC}}">
 						 
 					</image>
 				</view>
 				<view class="detail">
 					<view class="name text-cut">
-						<text class="yname">{{item.JOIN_NAME}}</text> 
+						<text class="yname text-black">{{item.JOIN_NAME}}</text> 
 					</view>
 
 					<view class="desc last text-cut margin-top-xs">

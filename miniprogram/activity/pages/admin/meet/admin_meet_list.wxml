@@ -35,9 +35,9 @@
 					</view>
 
 					<view class="operation">
-						<!--<button wx:if="{{item.MEET_STATUS!=1}}" class="btn text-red margin-right-s"
-							bindtap="bindStatusTap" data-id="{{item._id}}" data-status="1">审核通过</button>
-
+						<button wx:if="{{item.MEET_STATUS!=1}}" class="btn text-red margin-right-s"
+							bindtap="bindStatusTap" data-id="{{item._id}}" data-status="1">启用</button>
+<!--
 						<button wx:if="{{item.MEET_STATUS!=0}}" class="btn text-red margin-right-s"
 							bindtap="bindStatusTap" data-id="{{item._id}}" data-status="0">审核不通过</button>-->
 

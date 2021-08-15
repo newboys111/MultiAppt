@@ -12,24 +12,24 @@
         },
         "miniprogram": {
             "list": [
-				{
+                {
                     "name": "Activity 1.0.0 首页",
                     "pathName": "activity/pages/index/index_home",
                     "query": "",
                     "scene": null
-				},
+                },
                 {
                     "name": "Activity 1.0.0 个人中心",
                     "pathName": "activity/pages/my/index/my_index",
                     "query": "",
                     "scene": null
-				},
-				{
-					"name": "Activity 1.5.1 搜索",
-					"pathName": "activity/pages/search/search",
-					"query": "",
-					"scene": null
-				},
+                },
+                {
+                    "name": "Activity 1.5.1 搜索",
+                    "pathName": "activity/pages/search/search",
+                    "query": "",
+                    "scene": null
+                },
                 {
                     "name": "Activity 1.0.1 个人中心-修改个人资料",
                     "pathName": "activity/pages/my/base/my_base",
@@ -69,7 +69,7 @@
                 {
                     "name": "Activity 1.4.2 活动详细",
                     "pathName": "activity/pages/meet/meet_detail",
-                    "query": "id=8937eaa96118782f04c506db438a15b0",
+                    "query": "id=8937eaa9611937e704dd58c97fb5ce45",
                     "scene": null
                 },
                 {
@@ -95,8 +95,8 @@
                     "pathName": "activity/pages/my/meet/my_meet",
                     "query": "",
                     "scene": null
-				},
-				{
+                },
+                {
                     "name": "Activity 1.0.3 个人中心-我报名的活动",
                     "pathName": "activity/pages/my/meet/my_join",
                     "query": "",

@@ -31,6 +31,8 @@ const SetupModel = require('../model/setup_model.js');
 const UserModel = require('../model/user_model.js');
 const AdminModel = require('../model/admin_model.js');
 const NewsModel = require('../model/news_model.js');
+const MeetModel = require('../model/meet_model.js');
+const JoinModel = require('../model/join_model.js');
 
 class AdminService extends BaseCCMiniService {
 

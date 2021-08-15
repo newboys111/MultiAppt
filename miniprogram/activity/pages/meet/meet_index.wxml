@@ -45,9 +45,9 @@
 
 				</view>
 
-				<view wx:if="{{item.status==1}}" class="status-right-top  text-white">报名中</view>
-				<view wx:if="{{item.status==2}}" class="status-right-top text-white">进行中</view>
-				<view wx:if="{{item.status==3}}" class="status-right-top bg-grey text-white">已总结</view>
+				<view wx:if="{{item.status==1}}" class="status-right-top  text-red">报名中</view>
+				<view wx:if="{{item.status==2}}" class="status-right-top text-red">进行中</view>
+				<view wx:if="{{item.status==3}}" class="status-right-top bg-white text-grey" style="border:1rpx solid #ccc">已总结</view>
 				
 			</view> 
 

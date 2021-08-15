@@ -26,8 +26,7 @@
 }
 
 .article-box .article .corner-right-top { 
-	border-radius: 0!important;
-	opacity: .8; 
+	border-radius: 0 0rpx 0 20rpx;
 }
 
 .article-box .article .hint { 

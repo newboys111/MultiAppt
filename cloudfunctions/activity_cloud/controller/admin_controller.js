@@ -20,9 +20,10 @@ const ccminiDataCheck = require('../framework/validate/ccmini_data_check.js');
 const ccminiContentCheck = require('../framework/validate/ccmini_content_check.js');
 
 const UserModel = require('../model/user_model.js');
-
-const AdminService = require('../service/admin_service.js');
-
+const MeetModel = require('../model/meet_model.js');
+const JoinModel = require('../model/join_model.js');
+const AdminService = require('../service/admin_service.js'); 
+const MeetService = require('../service/meet_service.js');
 const ccminiTimeUtil = require('../framework/utils/ccmini_time_util.js');
 
 class AdminController extends CCMiniController {

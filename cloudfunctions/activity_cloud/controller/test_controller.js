@@ -16,6 +16,7 @@
  */
 const ccminiMock = require('../framework/utils/ccmini_mock.js');
 const UserModel = require('../model/user_model.js');
+const JoinModel = require('../model/join_model.js');
 
 class TestController {
 
@@ -23,8 +24,31 @@ class TestController {
 
 		console.log('>>>>TEST begin....');
 
-		await this.mockUser();
+		await this.mockJoin();
 		console.log('<<<<TEST END.')
+	}
+
+	async mockJoin() {
+
+		for (let i = 0; i < 30; i++) {
+			let where = { 
+			}
+			let fields = 'USER_MINI_OPENID'
+			let user = await UserModel.rand(where,fields,1); 
+
+			let data = {};
+
+			data.JOIN_MEET_ID = '8937eaa9611937e704dd58c97fb5ce45';
+			data.JOIN_USER_ID = user.USER_MINI_OPENID;
+			data.JOIN_NAME = ccminiMock.getName();
+			data.JOIN_CONTACT = ccminiMock.getMobile();
+			data.JOIN_ADD_TIME = ccminiMock.getTimestamp(-ccminiMock.getIntBetween(0, 86400 * 30));
+
+			console.log(data);
+			JoinModel.insert(data);
+		 
+		}
+
 	}
 
 	async mockUser() {

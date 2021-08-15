@@ -1,0 +1,11 @@
+<template name="userCardTpl">
+	<view class="user-card" >
+		<view class="avatar round large" style="background-image:url({{user.USER_PIC}})">
+			<view class="tag badge bg-{{user.USER_SEX==1?'blue':'red'}} icon-{{user.USER_SEX==1?'male':'female'}}"></view>
+		</view>
+		<view class="detail">
+			<view class="name">{{user.USER_NAME}}</view> 
+		</view>
+	 
+	</view>
+</template>

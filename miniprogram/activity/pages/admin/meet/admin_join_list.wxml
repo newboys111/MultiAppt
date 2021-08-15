@@ -1,0 +1,41 @@
+ 
+<block wx:if="{{isAdmin}}">
+
+<ccmini-cmpt-comm-list id="ccmini-cmpt-comm-list" isCache="{{false}}" type="admin-join" isTotalMenu="{{false}}" _params="{{_params}}" router="admin/join_list" topBottom="50" 
+	returnUrl='' bind:myCommListEvent="myCommListListener">
+
+			<!-- List Begin -->
+			<view class="main-admin">
+			<view class="list">
+				<view wx:if="{{dataList && dataList.total }}" class="load text-grey">共有{{dataList.total}}条记录</view>
+				
+				<view class="item shadow" wx:for="{{dataList.list}}" wx:key="key">  
+					<view class="corner-right-top text-bold number">{{index+1}}</view>
+					<view class="title text-darkgreen">
+						<text>报名者：{{item.USER_DETAIL.USER_NAME}}</text>
+						<text class="margin-left-s">{{item.JOIN_ADD_TIME}}</text>
+					</view>
+
+					<view class="desc">
+						<text class="text-black">姓名：{{item.JOIN_NAME}}</text> 
+						<text class="text-black">电话：{{item.JOIN_CONTACT}}</text>
+					</view>  
+
+					<view class="operation">
+						<button class="btn text-red margin-right-s" bindtap="bindDelTap"  data-jid="{{item._id}}" data-uid="{{item.JOIN_USER_ID}}"><text class="icon-delete"></text>删除</button> 
+					 
+						<button class="btn margin-right-s" bindtap="url" data-url="../user/admin_user_detail?id={{item.JOIN_USER_ID}}">用户详情</button> 
+					</view>
+				</view>
+			</view>
+		</view>
+		<!-- List END -->
+
+		<!--load begin-->
+		<import src="../../../ccmini-tpls/public/list_load_tpl.wxml" />
+		<template is="listLoadTpl" data="{{dataList}}" />
+		<!--load end-->
+
+</ccmini-cmpt-comm-list>
+ 
+</block>

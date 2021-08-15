@@ -1,0 +1,8 @@
+{
+	"usingComponents": {
+	  "ccmini-cmpt-img-upload": "../../ccmini-cmpts/public/img/img_upload_cmpt"
+	},
+	"enablePullDownRefresh": true,
+	"backgroundTextStyle": "dark",
+	"navigationBarTitleText": "编辑活动信息"
+  }

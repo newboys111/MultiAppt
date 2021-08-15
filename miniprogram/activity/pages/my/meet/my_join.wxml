@@ -1,0 +1,43 @@
+<block wx:if="{{isLogin}}">
+	<ccmini-cmpt-comm-list isCache="{{false}}" type="my-meet-join" search="{{search}}" _menus="{{sortMenus}}"
+		_items="{{sortItems}}" router="meet/my_join" topBottom="120" placeholder="搜索标题" returnUrl='my/meet/my_join'
+		bind:myCommListEvent="myCommListListener">
+
+		<view slot="searchEnd">
+			<button bindtap="url" data-url="../../meet/meet_add"
+				class="btn mid round bg-darkgreen bg-skin1 margin-right-s">+ 创建活动</button>
+		</view>
+
+		<!-- List Begin -->
+		<view class="text-pic-list-box">
+
+			<view class="item shadow" wx:for="{{dataList.list}}" wx:key="index" bindtap="url"
+				data-url="../../meet/meet_detail?id={{item.JOIN_MEET_ID}}">
+				<view class="title content-cut-two color-skin1">
+					{{item.MEET_DETAIL.MEET_TITLE}}
+				</view>
+
+				<view class="data text-cut">
+					<text
+						class="icon-calendar margin-right-xs color-skin1"></text><text>活动日期：{{item.MEET_DETAIL.MEET_DAY}}</text>
+				</view>
+
+				<view class="data text-cut">
+					<text
+						class="icon-timefill margin-right-xs color-skin1"></text><text>报名时间：{{item.JOIN_ADD_TIME}}</text>
+				</view>
+
+			</view>
+
+			<!--load begin-->
+			<import src="../../../ccmini-tpls/public/list_load_tpl.wxml" />
+			<template is="listLoadTpl" data="{{skin,dataList}}" />
+			<!--load end-->
+
+		</view>
+		<!-- List END -->
+	</ccmini-cmpt-comm-list>
+
+
+
+</block>

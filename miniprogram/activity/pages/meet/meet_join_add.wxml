@@ -1,0 +1,25 @@
+<view class="main main-meet-join-add main-skin1" wx:if="{{isLogin}}">
+	<form bindsubmit="bindFormSubmit">
+		<view class="form-box margin-top">
+			<view class="form-group text-red text-normal">
+				联系电话将保密，仅管理员和活动发起人可见
+			</view>
+			<view class="form-group">
+				<view class="title">姓名</view>
+				<input placeholder="您的姓名" placeholder-class="phc" model:value="{{formName}}"
+					focus="{{formNameFocus}}"></input>
+			</view>
+			<view class="form-group">
+				<view class="title">联系电话</view>
+				<input placeholder="您的联系电话" placeholder-class="phc" model:value="{{formContact}}"
+					focus="{{formContactFocus}}"></input>
+			</view>
+		</view>
+
+		<view class="padding-bottom flex  flex-direction  ">
+			<button formType="submit" class="btn bg-darkgreen margin-top-s text-bold large bg-skin1">提交</button>
+		</view>
+
+
+	</form>
+</view>

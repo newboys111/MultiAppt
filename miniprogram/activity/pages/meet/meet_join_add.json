@@ -1,0 +1,6 @@
+{
+	"usingComponents": {   
+	},
+	"enablePullDownRefresh":false,
+	"navigationBarTitleText": "活动报名"
+  }

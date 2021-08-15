@@ -1,0 +1,64 @@
+<block wx:if="{{isLogin}}">
+	<ccmini-cmpt-comm-list type="my-meet" search="{{search}}" _menus="{{sortMenus}}" _items="{{sortItems}}" router="meet/my"
+		topBottom="120" placeholder="搜索标题" returnUrl='my/meet/my_meet' bind:myCommListEvent="myCommListListener">
+
+		<view slot="searchEnd">
+			<button bindtap="url" data-url="../../meet/meet_add"
+				class="btn mid round bg-darkgreen bg-skin1 margin-right-s">+ 创建活动</button>
+		</view>
+
+		<!-- List Begin -->
+		<view class="text-pic-list-box">
+
+			<view class="item shadow" wx:for="{{dataList.list}}" wx:key="index">
+				<view class="title content-cut-two" bindtap="url" data-url="../../meet/meet_detail?id={{item._id}}">
+					{{item.MEET_TITLE}}
+					<text wx:if="{{item.new}}" class="tag margin-left-xs small bg-red round">new</text>
+					<text wx:if="{{item.hot}}" class="tag margin-left-xs small bg-orange round">hot</text>
+					<text wx:if="{{item.MEET_ORDER==0}}"
+						class="tag margin-left-xs small bg-darkgreen round bg-skin1">置顶</text>
+				</view>
+
+
+				<view class="data text-cut" style="height:40rpx">
+					<text class="margin-right-s text-white bg-skin1 tag">{{item.MEET_TYPE}}</text>
+
+					<text wx:if="{{item.MEET_JOIN_CNT}}" class="margin-right-s">{{item.MEET_JOIN_CNT}}人报名</text>
+
+
+					<text class="icon-location margin-left-s"></text>
+					<text class="margin-right-s">{{item.MEET_REGION}}</text>
+
+				</view>
+
+				<view class="data text-cut">
+					<text>发布时间：{{item.MEET_ADD_TIME}}</text>
+				</view>
+				<view class="data text-cut">
+					<text>活动日期：{{item.MEET_DAY}}</text>
+				</view>
+				<view class="data text-cut">
+					<text>报名截止：{{item.MEET_EXPIRE_TIME}}</text>
+				</view>
+
+				<view class="data data-button">
+					<button class="btn big bg-red light" data-id="{{item._id}}" bindtap="bindDelTap">删除</button>
+					<button class="btn big bg-darkgreen bg-skin1" bindtap="url"
+						data-url="../../meet/meet_edit?id={{item._id}}">编辑</button>
+				</view>
+
+
+			</view>
+
+			<!--load begin-->
+			<import src="../../../ccmini-tpls/public/list_load_tpl.wxml" />
+			<template is="listLoadTpl" data="{{skin,dataList}}" />
+			<!--load end-->
+
+		</view>
+		<!-- List END -->
+	</ccmini-cmpt-comm-list>
+
+
+
+</block>

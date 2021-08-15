@@ -1,0 +1,19 @@
+<template name="menuTpl">
+	<view class="tab-bar" wx:if="{{setup.SETUP_IS_SUB}}">  
+		<view class="tab-bar-border"></view>
+		<view class="tab-bar-item" bindtap="url" data-url="/meet/pages/index/index_home">
+			<image class="tab-icon" src="/meet/images/tabbar/home{{curMenu=='index_home'?'_cur':''}}.png"></image>
+			<view class="tab-text {{curMenu=='index_home'?'tab-text-cur':''}}" >首页</view>
+	</view>
+		<view class="tab-bar-item" bindtap="url" data-url="/meet/pages/news/news_board">
+			<image class="tab-icon" src="/meet/images/tabbar/news{{curMenu=='news_index'?'_cur':''}}.png"></image>
+			<view class="tab-text {{curMenu=='news_index'?'tab-text-cur':''}}" >公告通知</view>
+		</view> 
+		<view class="tab-bar-item" bindtap="url" data-url="/meet/pages/my/index/my_index">
+			<image class="tab-icon" src="/meet/images/tabbar/my{{curMenu=='my_index'?'_cur':''}}.png"></image>
+			<view class="tab-text {{curMenu=='my_index'?'tab-text-cur':''}}" >个人中心</view>
+		</view>
+	 
+
+	</view>
+</template>

@@ -1,0 +1,112 @@
+{
+	"pages": [
+		"projects/apptthing/pages/default/index/default_index",
+		"projects/apptthing/pages/about/list/about_list",
+		"projects/apptthing/pages/about/index/about_index",
+		"projects/apptthing/pages/search/search",
+		"projects/apptthing/pages/my/index/my_index",
+		"projects/apptthing/pages/my/reg/my_reg",
+		"projects/apptthing/pages/my/edit/my_edit",
+		"projects/apptthing/pages/my/foot/my_foot",
+		"projects/apptthing/pages/my/fav/my_fav",
+		"projects/apptthing/pages/news/index/news_index",
+		"projects/apptthing/pages/news/detail/news_detail",
+		"projects/apptthing/pages/news/cate1/news_cate1",
+		"projects/apptthing/pages/news/cate2/news_cate2",
+		"projects/apptthing/pages/admin/news/list/admin_news_list",
+		"projects/apptthing/pages/admin/news/add/admin_news_add",
+		"projects/apptthing/pages/admin/news/edit/admin_news_edit",
+		"projects/apptthing/pages/admin/setup/about/admin_setup_about",
+		"projects/apptthing/pages/admin/setup/about_list/admin_setup_about_list",
+		"projects/apptthing/pages/admin/setup/qr/admin_setup_qr",
+		"projects/apptthing/pages/admin/index/home/admin_home",
+		"projects/apptthing/pages/admin/index/login/admin_login",
+		"projects/apptthing/pages/admin/content/admin_content",
+		"projects/apptthing/pages/admin/mgr/log/admin_log_list",
+		"projects/apptthing/pages/admin/mgr/edit/admin_mgr_edit",
+		"projects/apptthing/pages/admin/mgr/list/admin_mgr_list",
+		"projects/apptthing/pages/admin/mgr/add/admin_mgr_add",
+		"projects/apptthing/pages/admin/mgr/pwd/admin_mgr_pwd",
+		"projects/apptthing/pages/admin/user/list/admin_user_list",
+		"projects/apptthing/pages/admin/user/detail/admin_user_detail",
+		"projects/apptthing/pages/admin/user/export/admin_user_export",
+		"projects/apptthing/pages/unit/select/unit_select",
+		"projects/apptthing/pages/meet/index/meet_index",
+		"projects/apptthing/pages/meet/calendar/meet_calendar",
+		"projects/apptthing/pages/meet/join/meet_join",
+		"projects/apptthing/pages/meet/detail/meet_detail",
+		"projects/apptthing/pages/meet/my_join_list/meet_my_join_list",
+		"projects/apptthing/pages/meet/my_join_detail/meet_my_join_detail",
+		"projects/apptthing/pages/admin/meet/add/admin_meet_add",
+		"projects/apptthing/pages/admin/meet/edit/admin_meet_edit",
+		"projects/apptthing/pages/admin/meet/export/admin_join_export",
+		"projects/apptthing/pages/admin/meet/join/admin_meet_join",
+		"projects/apptthing/pages/admin/meet/list/admin_meet_list",
+		"projects/apptthing/pages/admin/meet/record/admin_meet_record",
+		"projects/apptthing/pages/admin/meet/scan/admin_meet_scan",
+		"projects/apptthing/pages/admin/meet/temp/admin_meet_temp",
+		"projects/apptthing/pages/admin/meet/time/admin_meet_time",
+		"projects/apptthing/pages/admin/unit/list/admin_unit_list",
+		"projects/apptthing/pages/admin/unit/add/admin_unit_add",
+		"projects/apptthing/pages/admin/unit/edit/admin_unit_edit",
+		"cmpts/public/form/form_set/field/form_set_field",
+		"cmpts/public/form/form_show/content/form_show_content",
+		"pages/test1/test1"
+	],
+	"window": {
+		"backgroundColor": "#f1f1f1",
+		"backgroundTextStyle": "dark",
+		"navigationBarBackgroundColor": "#4376e4",
+		"navigationBarTitleText": "服务厅小程序",
+		"navigationBarTextStyle": "white"
+	},
+	"tabBar": {
+		"custom": false,
+		"backgroundColor": "#FFFFFF",
+		"color": "#999999",
+		"selectedColor": "#4376e4",
+		"list": [
+			{
+				"pagePath": "projects/apptthing/pages/default/index/default_index",
+				"text": "首页",
+				"iconPath": "/projects/apptthing/images/tabbar/home.png",
+				"selectedIconPath": "/projects/apptthing/images/tabbar/home_cur.png"
+			},
+			{
+				"pagePath": "projects/apptthing/pages/unit/select/unit_select",
+				"text": "服务厅",
+				"iconPath": "/projects/apptthing/images/tabbar/unit.png",
+				"selectedIconPath": "/projects/apptthing/images/tabbar/unit_cur.png"
+			},
+			{
+				"pagePath": "projects/apptthing/pages/news/cate1/news_cate1",
+				"text": "公告通知",
+				"iconPath": "/projects/apptthing/images/tabbar/news.png",
+				"selectedIconPath": "/projects/apptthing/images/tabbar/news_cur.png"
+			},
+			{
+				"pagePath": "projects/apptthing/pages/meet/calendar/meet_calendar",
+				"text": "预约日历",
+				"iconPath": "/projects/apptthing/images/tabbar/day.png",
+				"selectedIconPath": "/projects/apptthing/images/tabbar/day_cur.png"
+			},
+			{
+				"pagePath": "projects/apptthing/pages/my/index/my_index",
+				"text": "我的",
+				"iconPath": "/projects/apptthing/images/tabbar/my.png",
+				"selectedIconPath": "/projects/apptthing/images/tabbar/my_cur.png"
+			}
+		]
+	},
+	"permission": {
+		"scope.userLocation": {
+			"desc": "获取你当前位置信息用于小程序位置接口的效果展示"
+		}
+	},
+	"usingComponents": {
+		"cmpt-comm-list": "/cmpts/public/list/comm_list_cmpt",
+		"cmpt-picker": "/cmpts/public/picker/picker_cmpt",
+		"cmpt-modal": "/cmpts/public/modal/modal_cmpt"
+	},
+	"sitemapLocation": "sitemap.json"
+}

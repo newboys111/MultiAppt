@@ -1,9 +1,0 @@
-{
-	"usingComponents": {
-	  
-	},
-	"enablePullDownRefresh": true,
-	"backgroundTextStyle": "dark",
-	"navigationStyle": "custom",
-	"navigationBarTitleText": "活动详情"
-  }
